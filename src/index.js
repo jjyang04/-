@@ -3,12 +3,14 @@ import "./index.css";
 import ReactDOM from "react-dom/client";
 // import * as ReactDOM from "react-dom/client";
 import App from "./App";
+
 export const root = ReactDOM.createRoot(document.getElementById("root"));
 
 export const re_render = () => {
   root.render(
     // <ErrorBoundary>
     <App />
+
     // </ErrorBoundary>
   );
 };
