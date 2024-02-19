@@ -18,10 +18,13 @@ function App() {
   //   navigate("/fun");
   //   // eslint-disable-next-line react-hooks/exhaustive-deps
   // }, []);
+  // console.log(1111);
   const navigate = () => {
     if (localStorage.getItem("Router") && localStorage.getItem("doc_tocken")) {
+      // console.log("index");
       return "./index";
     } else {
+      // console.log("login");
       return "./login";
     }
   };
